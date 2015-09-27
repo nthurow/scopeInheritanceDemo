@@ -1,0 +1,14 @@
+{
+  "name": "scopeInheritanceDemo",
+  "version": "0.0.0",
+  "description": "",
+  "dependencies": {
+    "static-server": "~2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node node_modules/static-server/bin/static-server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

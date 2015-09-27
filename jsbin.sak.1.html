@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<!--
+  Created using localhost:3000
+  Source can be edited via http://localhost:3000/sak/1/edit
+-->
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <script src="//localhost:9080/jquery-2.1.js"></script>
+  <script src="//localhost:9080/angular-1.4.js"></script>
+
+<style id="jsbin-css">
+
+</style>
+</head>
+<body>
+  
+  
+  <div ng-app="myApp" ng-controller="myCtrl">
+    First Name: 
+    <input type="text" ng-model="name.firstName" />
+    <br>
+      Last Name: 
+      <input type="text" ng-model="name.lastName" />
+      <br>
+      <br>
+    Full Name: <full-name></full-name>
+  </div>
+  
+  
+  <script>
+    var app = angular.module('myApp', []);
+    
+    app.controller('myCtrl', function($scope, $rootScope) {
+      
+      $scope.firstName = 'Nick';
+      $scope.lastName = 'Thurow';
+    });
+    
+    app.directive('fullName', function() {
+      
+      return {
+        restrict: 'E',
+        scope: {
+          firstName: '=',
+          lastName: '='
+        },
+        template: '<span>{{firstName}} {{lastName}}</span>',
+        controller: function($scope) {
+           $scope.propertyFromDirective = 'from directive'; 
+        }
+      };
+    });
+    </script>
+<script>
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
